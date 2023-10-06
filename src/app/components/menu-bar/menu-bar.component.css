@@ -1,0 +1,12 @@
+.container__menu-bar{
+    margin: .25rem;
+    padding: .25rem;
+}
+
+.container__menu-bar > ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+

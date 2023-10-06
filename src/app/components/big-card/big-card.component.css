@@ -1,0 +1,24 @@
+.container__big-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.big-card__title > img{
+    width: 100%;
+    height: auto;
+}
+
+.big-card__title{
+    margin-top: 1.5rem;
+}
+
+.big-card__title > h2{
+    margin-top: .1rem;
+    font-size: 1.75rem;
+}
+
+.big-card__description > p > a{
+    margin-top: .5rem;
+    color: #808080;
+}
