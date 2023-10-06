@@ -1,10 +1,16 @@
 .container__big-card{
+    margin: .5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transition: .4s;
 }
 
-.big-card__title > img{
+
+
+.big-card__photo > img{
+    object-fit: cover;
     width: 100%;
     height: auto;
 }
@@ -14,11 +20,21 @@
 }
 
 .big-card__title > h2{
-    margin-top: .1rem;
     font-size: 1.75rem;
 }
 
-.big-card__description > p > a{
+.big-card__description > a > p{
     margin-top: .5rem;
-    color: #808080;
+    color: #c2c2c2;
+}
+
+.container__big-card:hover {
+    background-color: #ffffff;
+
+}
+.container__big-card:hover * {
+    color: #000000;
+}
+.container__big-card:hover a > p {
+    color: #000000;
 }

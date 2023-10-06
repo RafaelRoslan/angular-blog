@@ -1,14 +1,14 @@
 <section class="container__big-card">
     <div class="big-card__photo">
-        <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="" width="500px" height="350px" srcset="">
+        <img src="{{ photoCover }}" alt="">
     </div>
     <div class="big-card__title">
-        <span>by Darth Vader</span>
-        <h2><a href="#">O imperio precisa de Você</a></h2>
+        <span>by {{authorName}}</span>
+        <h2><a [routerLink]="['content',id]">{{cardTitle}}</a></h2>
     </div>
     <div class="big-card__description">
-        <a href="#">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dicta ullam, in temporibus ipsum eum. Est natus soluta fugiat illum</p>
+        <a [routerLink]="['content',id]">
+            <p>{{cardDescription}}</p>
         </a>
     </div>
 

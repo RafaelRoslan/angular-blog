@@ -1,17 +1,26 @@
 .container__small-card{
-    border: solid 2px #ffffff;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    transition: .4s;
+}
+
+.container__small-card:hover{
+    background-color: #ffffff;
+}
+
+.container__small-card:hover *{
+        color: #000000;
 }
 
 .small-card__photo{
     margin: .25rem;
-    padding: .25rem;
+    padding: .5rem;
 }
 
 .small-card__photo > img{
-    width: 150px;
-    height: 150px;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
 }
 
 .small-card__title{

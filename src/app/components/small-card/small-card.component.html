@@ -1,9 +1,9 @@
 <section class="container__small-card">
     <div class="small-card__photo">
-        <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="" width="500px" height="350px" srcset="">
+        <img src="{{photoCover}}" alt="">
     </div>
     <div class="small-card__title">
-        <span>by Notice Tropper</span>
-        <h3><a href="#">Rebeldes roubam planos da estrela da morte</a></h3>
+        <span>by {{authorName}}</span>
+        <h3><a [routerLink]="['content',id]">{{cardTitle}}</a></h3>
     </div>
 </section>

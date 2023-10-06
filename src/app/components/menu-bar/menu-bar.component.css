@@ -1,6 +1,6 @@
 .container__menu-bar{
     margin: .25rem;
-    padding: .25rem;
+    overflow: auto;
 }
 
 .container__menu-bar > ul{
@@ -10,3 +10,14 @@
     list-style: none;
 }
 
+.container__menu-bar > ul > li{
+    padding: .5rem;
+    transition: .4s;
+}
+
+.container__menu-bar > ul > li:hover{
+    background-color: #ffffff;
+}
+.container__menu-bar > ul > li:hover a{
+    color: #000000;
+}
